@@ -1,3 +1,4 @@
-backend/__pycache__/**
-backend/workout_tracker/__pycache__/**
-backend/backend/__pycache__/**
+backend/__pycache__/
+backend/workout_tracker/__pycache__/
+backend/backend/__pycache__/
+workout_tracker/migrations/
