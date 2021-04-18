@@ -15,8 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework import routers
+from workout_tracker import views
+
+router = routers.DefaultRouter()
+router.register(r'programs', views.ProgramView, 'program')
+router.register(r'workouts', views.WorkoutView, 'workout')
+router.register(r'exercises', views.ExerciseView, 'exercises')
 
 urlpatterns = [
     path('workout_tracker', include('workout_tracker.urls')),
     path('admin/', admin.site.urls),
+    path('api/', include(router.urls)),
 ]
