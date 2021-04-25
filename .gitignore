@@ -3,3 +3,5 @@ backend/backend/__pycache__/
 backend/workout_tracker/__pycache__/
 backend/workout_tracker/migrations/
 backend/db.sqlite3
+frontend/package-lock.json
+frontend/node_modules/
